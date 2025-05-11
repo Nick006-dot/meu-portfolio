@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -10,6 +11,8 @@ html {
 }
 
 :root {
+    --titulo-fonte: "Orbitron", sans-serif;
+    --texto-fonte: "Inter", sans-serif;
     --primaria: #4f46e5;
     --secundaria: #7c3aed;
     --escuro: #0f172a;
@@ -40,6 +43,7 @@ body {
 }
 
 .menu-link {
+    font-family: var(--texto-fonte);
     text-decoration: none;
     color: var(--claro);
     font-weight: 500;
@@ -80,6 +84,7 @@ body {
 }
 
 h1 {
+    font-family: var(--titulo-fonte);
     font-size: 3.5rem;
     color: var(--primaria);
     font-weight: bold;
@@ -87,8 +92,37 @@ h1 {
 }
 
 p {
+    font-family: var(--texto-fonte);
     font-size: 1.5rem;
     color: var(--claro);
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.redes-sociais a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--claro);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--vidro);
+    text-decoration: none;
+}
+
+.redes-sociais a:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    color: white;
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
 .sobre-projetos {
@@ -96,6 +130,7 @@ p {
 }
 
 .sobre-titulo {
+    font-family: var(--titulo-fonte);
     font-size: 3rem;
     color: var(--claro);
     text-align: center;
@@ -114,12 +149,39 @@ p {
     line-height: 1.6;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.botao-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botao-download:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(79, 70, 229, 0.3);
+}
+
 .sobre-paragrafo {
+    font-family: var(--texto-fonte);
     text-align: center;
     font-size: 1rem;
 }
 
 .projeto-titulo {
+    font-family: var(--titulo-fonte);
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
@@ -157,6 +219,7 @@ p {
 }
 
 .info-projetos {
+    font-family: var(--titulo-fonte);
     margin-bottom: 5px;
 }
 
@@ -176,6 +239,7 @@ p {
 }
 
 .contato-titulo {
+    font-family: var(--titulo-fonte);
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
@@ -207,6 +271,10 @@ p {
     box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
 }
 
+.campo-form::placeholder {
+    font-family: var(--texto-fonte);
+}
+
 .grupo-form {
     margin-bottom: 1.5rem;
 }
@@ -221,6 +289,7 @@ p {
     font-weight: bold;
     width: 100%;
     transition: 0.5s ease;
+    font-family: var(--texto-fonte);
 }
 
 .botao-form:hover {
