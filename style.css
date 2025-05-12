@@ -43,7 +43,7 @@ body {
 }
 
 .menu-link {
-    font-family: var(--texto-fonte);
+    font-family: var(--titulo-fonte);
     text-decoration: none;
     color: var(--claro);
     font-weight: 500;
