@@ -25,6 +25,10 @@
             </li>
 
             <li>
+                <a href="#habilidades" class="menu-link">Habilidades</a>
+            </li>
+
+            <li>
                 <a href="#projetos" class="menu-link">Projetos</a>
             </li>
 
@@ -78,6 +82,60 @@
         </div>
     </section>
 
+    <section id="habilidades" class="habilidades">
+        <h2 class="habilidades-titulo">Minhas Habilidades</h2>
+        <div class="habilidades-container">
+            <div class="habilidade-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <div class="progresso">
+                    <div class="barra" style="width: 90%"></div>
+                </div>
+            </div>
+            
+            <div class="habilidade-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <div class="progresso">
+                    <div class="barra" style="width: 85%"></div>
+                </div>
+            </div>
+            
+            <div class="habilidade-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="progresso">
+                    <div class="barra" style="width: 75%"></div>
+                </div>
+            </div>
+            
+            <div class="habilidade-card">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git</h3>
+                <div class="progresso">
+                    <div class="barra" style="width: 80%"></div>
+                </div>
+            </div>
+            
+            <div class="habilidade-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsividade</h3>
+                <div class="progresso">
+                    <div class="barra" style="width: 85%"></div>
+                </div>
+            </div>
+            
+            <div class="habilidade-card">
+                <i class="fas fa-code"></i>
+                <h3>Boas Práticas</h3>
+                <div class="progresso">
+                    <div class="barra" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section id="projetos" class="sobre-projetos">
         <h2 class="projeto-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
@@ -111,11 +169,11 @@
         <h2 class="contato-titulo">Entre em Contato</h2>
         <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
             <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome">
+                <input placeholder="Nome" class="campo-form" id="nome" required>
             </div>
 
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem" required></textarea>
             </div>
 
             <button type="submit" class="botao-form">Enviar Whatsapp</button>

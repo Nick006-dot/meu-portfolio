@@ -180,6 +180,69 @@ p {
     font-size: 1rem;
 }
 
+.habilidades {
+    padding: 8rem 2rem;
+}
+
+.habilidades-titulo {
+    font-family: var(--titulo-fonte);
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.habilidades-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.habilidade-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--vidro);
+}
+
+.habilidade-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+}
+
+.habilidade-card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.habilidade-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.progresso {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.barra {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    border-radius: 5px;
+}
+
 .projeto-titulo {
     font-family: var(--titulo-fonte);
     text-align: center;
