@@ -188,7 +188,7 @@
         const mensagem = document.getElementById('mensagem').value;
         const telefone = '5541997243025'
 
-        const texto = `Olá, me chamo ${nome}, mensagem ${mensagem}`
+        const texto = `Olá, me chamo ${nome}, ${mensagem}`
         const msgFormatada = encodeURIComponent(texto)
 
         const url = `https://whatsa.me/${telefone}/?t=${msgFormatada}`
