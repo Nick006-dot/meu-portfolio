@@ -41,7 +41,7 @@
     <main id="inicio" class="cabecalho">
 
         <img src="./img/fotodeperfil.png" alt="Foto de perfil" class="foto-perfil">
-        <h1>Nickolas Sales</h1>
+        <h1 class="typing-text">Nickolas Sales</h1>
         <p>Desenvolvedor Front-end</p>
 
          <div class="redes-sociais">
@@ -63,7 +63,7 @@
     <section id="sobre" class="sobre-projetos">
         <h2 class="sobre-titulo">Sobre mim</h2>
         <div class="sobre-caixa">
-            <p>Olá! Me chamo Nickolas Oliveira Sales, tenho 19 anos e estou em transição da área financeira para o mundo
+            <p>Olá! Me chamo Nickolas Oliveira Sales, tenho 19 anos e estou em transição da área administrativa para o mundo
                 da programação e do desenvolvimento web.
 
                 Atualmente, me especializo em desenvolvimento fullstack pelo DevClub, com foco em tecnologias como HTML,
@@ -75,7 +75,7 @@
             </p>
 
             <div class="btn-container">
-                <a href="./assets/Curriculo_Nickolas.pdf" download class="botao-download">
+                <a href="./assets/Curriculo_Nickolas (3).pdf" download class="botao-download">
                     <i class="fas fa-download"></i> Baixar Currículo
                 </a>
             </div>
@@ -132,6 +132,21 @@
                     <div class="barra" style="width: 80%"></div>
                 </div>
             </div>
+            
+            <div class="habilidade-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <div class="progresso">
+                    <div class="barra" style="width: 20%"></div>
+                </div>
+            </div>
+
+            <div class="habilidade-card">
+                <i class="fab fa-node-js"></i>
+                <h3>Node.js</h3>
+                <div class="progresso">
+                    <div class="barra" style="width: 20%"></div>
+                </div>
         </div>
     </section>
 
@@ -195,6 +210,11 @@
 
         window.open(url, '_blank')
     }
+
+     setTimeout(() => {
+            const typingElement = document.querySelector('.typing-text');
+            typingElement.style.borderRight = 'none';
+        }, 5000);
 </script>
 
 </html>

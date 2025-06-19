@@ -91,6 +91,41 @@ h1 {
     margin: 20px;
 }
 
+/* Animação de digitação */
+        .typing-text {
+            display: inline-block;
+            border-right: 6px solid var(--primaria);
+            margin: 0 auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: center;
+            animation: typing 3s steps(15, end) 1s both, blink-cursor 500ms infinite normal both;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 9em;
+            }
+        }
+
+        @keyframes blink-cursor {
+            from, to {
+                border-color: var(--primaria);
+            }
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        /* Parar o cursor depois da animação */
+        .typing-text.finished {
+            animation: blink-cursor 1s infinite normal;
+        }
+
+
 p {
     font-family: var(--texto-fonte);
     font-size: 1.5rem;
